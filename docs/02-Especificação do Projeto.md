@@ -1,26 +1,16 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação dos usuários em um trabalho de imersão realizado pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As personas, ou clientes típicos levantados no decorrer do procedimento de elucidação do problema, são descritas nas figuras que se seguem:
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+![Persona 01](https://images2.imgbox.com/d7/c7/SAOLdBJ1_o.jpg)
+![Persona 02](https://images2.imgbox.com/db/50/kMYytH6R_o.jpg)
+![Persona 03](https://images2.imgbox.com/20/90/UUTUI38O_o.jpg)
+![Persona 04](https://images2.imgbox.com/b2/fd/NbcoRhOw_o.jpg)
+![Persona 05](https://images2.imgbox.com/8f/ed/ejp1aXSZ_o.jpg)
 
 ## Histórias de Usuários
 
@@ -28,76 +18,59 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Cássia dos Santos Jardim  | Visualizar os pontos de coleta seletiva perto de casa. | A mãe gosta de separar o lixo corretamente, mas não sabe onde descartá-lo. |
+|Daiane Azevedo  | Visualizar informações sobre a coleta seletiva na cidade. | Interessa-se pelo bem-estar do planeta e quer fazer sua parte para mantê-lo. |
+|Ciro Antônio de Almeida  | manter um registro dos pontos de coleta seletiva. | Quer incentivar clientes e fornecedores a iniciar a coleta seletiva.  |
+|Marcela de Albuquerque  | Fazer uma parceria da associação de moradores do bairro onde mora com centros de coleta seletiva. | Facilitar o descarte sustentável em seu bairro. |
+|Luiz Henrique Viana  | Ser informado acerca dos pontos de coleta seletiva da cidade. | Começar a realizar a coleta seletiva em sua casa. |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Esta seção apresenta os requisitos funcionais e não funcionais do projeto, com suas respectivas descrições e prioridades de implementação. 
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+Os requisitos funcionais representam as necessidades, características e recursos fornecidos pelo Colet@.
+
+
+|ID           | Descrição do Requisito  | Prioridade |
+|-------------|------------------------------|----|
+| RF-001 | A plataforma deverá permitir um CRUD de pontos de coleta. | ALTA | 
+| RF-002 | O usuário poderá visualizar, através de uma interface intuitiva e amigável, a localização do ponto de coleta.  | ALTA |
+| RF-003 | O usuário terá um link para a plataforma do Google Maps, caso deseje visualizar o caminho até o ponto de coleta escolhido. | ALTA | 
+| RF-004 | O usuário poderá buscar pontos de coleta seletiva por bairros de Belo Horizonte. | ALTA | 
+| RF-005 | O usuário poderá buscar pontos de coleta para lixo eletrônico.  | ALTA | 
+| RF-006 | Login para administrador com autorização para operações CRUD de pontos de coleta. | MÉDIA | 
+| RF-007 | A plataforma poderá ser reutilizada em outras cidades. | MÉDIA | 
+
+
 
 ### Requisitos não Funcionais
 
+Os requisitos não-funcionais descrevem características de caráter mais técnico a serem observadas, com o objetivo de assegurar que os requisitos funcionais sejam devidamente atendidos. 
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Obtenção e atualização dos dados de pontos de coleta seletiva em Belo Horizonte e Região Metropolitana. | ALTA | 
+|RNF-002| Plataforma online gratuita para hospedagem da página (Heroku). | ALTA | 
+|RNF-003| Banco de dados gratuito para armazenamento da informação (MySql). | ALTA | 
+|RNF-004| Implementação de Back-end com linguagem a ser definida. | ALTA | 
+|RNF-005| Integração com a API do Google Maps para visualização, em forma de mapa, dos pontos de coleta.| ALTA | 
+|RNF-006| Definição de um modelo de criação e inserção de dados que facilite a reutilização e constante atualização da plataforma. | MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+O projeto está restrito pelos itens apresentados na tabela a seguir:
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 15/12/2021. |
+|RE-02| O aplicativo deve utilizar conhecimentos de SQL e Modelagem de Dados, Engenharia de Requisitos de Software, Programação Modular, Algoritmos e Estruturas de Dados, Desenvolvimento Web Back End e Front End e Fundamentos de Redes de Computadores.  |
+|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho. |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+![Diagrama de Caso de Uso](https://images2.imgbox.com/47/ca/7JjjQd7T_o.png)
