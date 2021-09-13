@@ -1,4 +1,4 @@
-# colet@
+# Receit@s
 
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
@@ -6,7 +6,7 @@
 
 `EIXO 2`
 
-Plataforma que disponibiliza ao usuário informações sobre pontos de coleta seletiva em Belo Horizonte e região metropolitana.
+Plataforma que possibilita ao usuário buscar receitas a partir de ingredientes que já possui em casa, colaborando na organização na rotina e reduzindo o desperdício alimentar.
 
 ## Integrantes
 
