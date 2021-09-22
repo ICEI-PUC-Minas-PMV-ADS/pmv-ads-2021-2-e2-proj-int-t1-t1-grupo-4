@@ -73,4 +73,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir:
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Caso de Uso](https://images2.imgbox.com/47/ca/7JjjQd7T_o.png)
+![Diagrama de Caso de Uso](https://images2.imgbox.com/4d/0f/HywU7vTc_o.png)
