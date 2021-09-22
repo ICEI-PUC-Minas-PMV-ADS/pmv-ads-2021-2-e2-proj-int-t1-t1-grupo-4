@@ -1,4 +1,4 @@
-# Receit@s
+# i-cook
 
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
