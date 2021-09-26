@@ -43,4 +43,9 @@ O maior acesso dos brasileiros a dispositivos móveis também permite o maior al
 
 ## Público-Alvo
 
+Nosso público-alvo consiste em pessoas entre 20 e 60 anos, que utilizam a tecnologia (mais especificamente, a internet) como aliada nas tarefas do dia-a-dia. É possível afirmar que a maior parte da força de trabalho que teve a possibilidade de trabalhar remotamente durante a pandemia já está relativamente acostumada ao uso de computadores. Ainda que a proficiência digital desse público seja variável, o uso da nossa solução prescinde de conhecimentos avançados de tecnologia e, desta forma, pretende ser acessível a qualquer indivíduo que maneje o básico das ferramentas digitais (busca e navegação na Internet, utilização de aplicativos como Whatsapp e Facebook).  
+
+Ainda que tenham mantido seus empregos, muitas dessas pessoas viram suas rotinas serem alteradas pela pandemia da COVID-19 e agora precisam encontrar opções rápidas, baratas e, idealmente, saudáveis na hora de se alimentar. Para aqueles que vivem com crianças, os fatores variedade e rapidez se tornaram ainda mais cruciais.
+
+Neste contexto, o icook se apresenta como uma ferramenta de otimização dos recursos disponíveis, incentivando o reaproveitamento de pratos prontos e oferecendo opções rápidas e práticas para minimizar o tempo dedicado ao preparo de refeições. 
 
