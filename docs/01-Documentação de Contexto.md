@@ -1,41 +1,46 @@
 # Introdução
 
-É sabido que se faz necessária a reformulação da maneira de o ser humano lidar com o descarte de detritos em seu cotidiano. Considerando as mudanças pelas quais o planeta passa, a cada dia torna-se mais necessária a adoção de medidas sustentáveis e a adequação delas à realidade das pessoas. 
+É sabido que a alimentação constitui uma das atividades humanas mais importantes, não só por razões biológicas, mas também por envolver aspectos sociais, psicológicos e econômicos fundamentais na dinâmica da evolução das sociedades. Considerando as mudanças pelas quais o planeta passa, a cada dia torna-se mais necessária a reformulação da maneira de o ser humano lidar com os alimentos, através da adoção de medidas sustentáveis e a adequação delas à realidade das pessoas. 
 
-Existem inúmeras barreiras no que concerne a implementação de um sistema eficaz da Coleta Seletiva nos grandes centros urbanos, há o desconhecimento sobre a reciclabilidade dos materiais, falta de conscientização ambiental, carência de infraestrutura, e uma falta de conhecimento gerencial em cooperativas, e nos órgãos da administração pública, além de um incentivo desmedido ao consumo. 
+Além dos fatos supramencionados, se faz necessário enfatizar a liquidez dos tempos, e as perspectivas trazidas pela Web, com o advento das redes sociais, a difusão de tecnologia e a velocidade com a qual as tarefas cotidianas são desempenhadas para que o ser humano possa buscar uma maior qualidade de vida, e despender menos tempo nas tarefas e mais tempo em atividades aprazíveis é fundamental.
 
-De acordo com o IBGE (2016) 70% dos municípios brasileiros dispõem seus resíduos em lixões a céu aberto, e as referidas práticas impactam de forma preocupante o ar, o solo, a água e possuem significativos impactos à saúde pública. 
+As referidas tarefas a serem desempenhadas no nosso cotidiano, juntamente com a necessidade de conexão em tempo praticamente integral requer o uso de ferramentas que otimizem o nosso dia-a-dia e ao mesmo tempo proporcionem experiências agradáveis e de alta qualidade a quem escolhe se utilizar de uma aplicação. 
 
-Por sua vez, a tecnologia possui uma função social de extrema importância, que implica a resolução de problemas do cotidiano, aliada ao tráfego de informações. Nunca, na história de toda humanidade, houve uma facilidade tão grande em difundir e veicular conhecimento. 
+É com essa mentalidade que visamos acoplar sustentabilidade, versatilidade, rapidez e alguma diversão à corriqueira rotina que envolve o preparo dos alimentos a serem consumidos, bem como a interação leve das pessoas em relação a isso. A presente aplicação visa fornecer uma gama de receitas culinárias, cujos ingredientes estejam diretamente relacionados, de modo a otimizar o preparo de um cardápio semanal, aproveitar os ingredientes já comprados, evitar descartes e desperdícios desnecessários, além de proporcionar a interação entre as pessoas em algo que acompanha o ser humano desde o início dos tempos: a comida!
 
-Deste modo, contamos com a ferramenta ideal para auxiliar no estancamento de grande parte dos problemas dos seres humanos no século XXI, e é com essa mentalidade que buscamos criar um canal de informação com mecanismos que permitam ao usuário buscar os centros de coleta seletiva, associações de catadores, por critérios de geolocalização na cidade de Belo Horizonte. 
+Com o despontamento da pandemia, houve diversas mudanças de realidade e alterações de contextos, nos quais se fazem necessárias significativas retenções de gastos, visto que o índice de inflação é o mais alto em 25 anos de acordo com o Índice Nacional de Preços ao Consumidor Amplo (IPCA), além da adequação de rotinas para a realidade de home office, na qual as pessoas precisam conciliar as atividades laborais com as tarefas do lar.
 
-Ocorre que, muitas vezes as pessoas não levam os detritos aos lugares de descarte correto, porque não sabem onde ele fica, ou porque é um lugar de difícil acesso e é inviável realizar um desvio muito grande do próprio caminho para tal. Diante disso, torna-se fundamental colocar a tecnologia a serviço do usuário de uma forma que lhe permita preservar o planeta de acordo com a sua parcela de responsabilidade, de maneira dinâmica, prática e eficaz.
+As refeições sempre foram, e ainda são, motivo de alegrias, reunião de pessoas, e inclusive uma forma de demonstrar afeto, e com a pressa do dia-a-dia torna-se complicado resgatar esses sentimentos agradáveis e aliá-los à pressa corriqueira, por isso há a busca por otimizar o preparo das refeições, diminuir o desperdício, e ainda registrar momentos.
+
 
 
 ## Problema
-O problema que se busca solucionar é a falta de conhecimento disponível ao usuário para a realização da Coleta Seletiva, aliada à falta de praticidade em levar os itens ao centro de coleta por não saber qual o centro mais próximo. 
+Durante o período da pandemia, muitas rotinas foram afetadas e a forma de se alimentar não ficou isenta de mudanças. 
 
-## Objetivos
+Tendo em vista este novo cenário, nossa solução visa a resolver o problema de quem precisa ter praticidade com os ingredientes disponíveis na despensa, para que os mesmos sejam utilizados nas refeições, além de promover receitas rápidas para que seja possível associar tempo do horário do almoço com o preparo do alimento.
 
-O objetivo geral deste trabalho é a criação de uma plataforma web que facilite o acesso à informação sobre o descarte ecologicamente correto dos resíduos ao centralizar e fornecer dados sobre os pontos de coleta seletiva no município de Belo Horizonte e Região Metropolitana.
+Nosso foco recai sobre aqueles que precisam conciliar o trabalho remoto com as tarefas do dia-a-dia, como detalharemos na seção Público-Alvo. 
+
+
+## Objetivo
+
+O objetivo geral deste trabalho é a criação de uma plataforma web que apresente receitas diversas que possibilitem o reaproveitamento de ingredientes de maneira criativa,  promovendo a interação entre pessoas comuns que gostam de cozinhar e buscam a organização da rotina e a redução do desperdício alimentar.
 
 Como objetivos específicos, podemos ressaltar:
-- Reunir as informações sobre os pontos oficiais de coleta seletiva no município de Belo Horizonte e Região Metropolitana;
-- Permitir a consulta dos locais de coleta seletiva mencionados no item anterior;
-- Permitir o cadastro de novos locais de coleta seletiva na região alvo deste projeto; 
-- Exibir a informação de maneira simplificada para o usuário;
+- Reunir grande quantidade de receitas práticas selecionadas para o dia-a-dia;
+- Permitir a consulta de receitas com os ingredientes, ou com recursos culinários pré-prontos;
+- Permitir o cadastro de usuários, para que eles possam interagir entre si, curtindo fotos das receitas executadas por outros usuários; 
+- Exibir a informação de maneira simplificada para o usuário.
+
 
 
 ## Justificativa
 
-Atualmente possuímos uma  variedade infinita de materiais disponíveis, e com isso, diversos resíduos gerados. Pensando nesta perspectiva, e especificamente, no impacto ambiental que a produção desses resíduos provocam, planejamos uma solução que pode ser útil à sociedade.
+Este projeto se faz necessário porque visa a resolver um problema que se tornou mais frequente recentemente e, por isso, ainda não conta com muitas soluções disponíveis. 
 
-Resíduos descartados de forma incorreta podem causar impactos socioambientais significativos, pois o acúmulo em locais inadequados, formam focos de proliferação de insetos e  outros vetores para diversas doenças. 
-
-Materiais perigosos como pilhas e objetos eletrônicos, quando descartados incorretamente, podem trazer danos irreversíveis para o meio ambiente. Por isso, é importante saber não apenas as cores da coleta seletiva, como também os centros para realização do descarte de forma correta.
+O maior acesso dos brasileiros a dispositivos móveis também permite o maior alcance da solução proposta e facilita a interatividade entre os usuários.
 
 
 ## Público-Alvo
 
-Embora toda população seja beneficiada com esta solução, que tem a finalidade de facilitar o acesso à informação e estimular a mudança de conduta em relação ao meio ambiente, o público alvo consiste em pessoas que fazem uso frequente de computadores e dispositivos móveis para buscar informações sobre problemas diversos. Desta forma, incluímos na faixa etária alvo deste projeto indivíduos com idade entre 15 e 65 anos que possuam afinidade com tecnologia e que se preocupam com o descarte correto de resíduos.
+
