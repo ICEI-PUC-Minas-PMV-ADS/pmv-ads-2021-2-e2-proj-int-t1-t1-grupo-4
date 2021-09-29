@@ -37,16 +37,16 @@ Esta seção apresenta os requisitos funcionais e não funcionais do projeto, co
 
 ### Requisitos Funcionais
 
-Os requisitos funcionais representam as necessidades, características e recursos fornecidos pelo Colet@.
+Os requisitos funcionais representam as necessidades, características e recursos fornecidos pelo icook.
 
 
 |ID           | Descrição do Requisito  | Prioridade |
 |-------------|------------------------------|----|
-| RF-001 | O sistema deve oferecer funcionalidade de login e cadastro de usuários. | ALTA | 
-| RF-002 | O sistema deve estabelecer distintos níveis de acesso, categorizando funcionalidades e conteúdos segundo o seguinte critério: visitante, usuário padrão e usuário administrador (os usuários devem realizar login para poder visualizar funcionalidades exclusivas).  | ALTA |
-| RF-003 | O usuário padrão terá um perfil de usuário, por meio do qual poderá interagir com as receitas da plataforma. | ALTA | 
-| RF-004 | O sistema deve permitir que o usuário realize todas as operações de CRUD (Create/Retrieve/Update/Delete) na plataforma. Somente o usuário administrador poderá deletar e atualizar receitas que não sejam de sua autoria | ALTA | 
-| RF-005 | O sistema deve permitir que o usuário adicione comentários e imagens às receitas da plataforma.  | ALTA |  
+|RF-001| O sistema deve oferecer funcionalidade de login e cadastro de usuários. | ALTA | 
+|RF-002| O sistema deve estabelecer distintos níveis de acesso, categorizando funcionalidades e conteúdos segundo o seguinte critério: visitante, usuário padrão e usuário administrador (os usuários devem realizar login para poder visualizar funcionalidades exclusivas).  | ALTA |
+|RF-003| O usuário padrão terá um perfil de usuário, por meio do qual poderá interagir com as receitas da plataforma. | ALTA | 
+|RF-004| O sistema deve permitir que o usuário realize todas as operações de CRUD (Create/Retrieve/Update/Delete) na plataforma. Somente o usuário administrador poderá deletar e atualizar receitas que não sejam de sua autoria | ALTA | 
+|RF-005| O sistema deve permitir que o usuário adicione comentários e imagens às receitas da plataforma.  | ALTA |  
 
 
 
