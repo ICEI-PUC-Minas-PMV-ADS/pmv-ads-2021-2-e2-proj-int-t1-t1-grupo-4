@@ -42,13 +42,11 @@ Os requisitos funcionais representam as necessidades, características e recurso
 
 |ID           | Descrição do Requisito  | Prioridade |
 |-------------|------------------------------|----|
-| RF-001 | A plataforma deverá permitir um CRUD de pontos de coleta. | ALTA | 
-| RF-002 | O usuário poderá visualizar, através de uma interface intuitiva e amigável, a localização do ponto de coleta.  | ALTA |
-| RF-003 | O usuário terá um link para a plataforma do Google Maps, caso deseje visualizar o caminho até o ponto de coleta escolhido. | ALTA | 
-| RF-004 | O usuário poderá buscar pontos de coleta seletiva por bairros de Belo Horizonte. | ALTA | 
-| RF-005 | O usuário poderá buscar pontos de coleta para lixo eletrônico.  | ALTA | 
-| RF-006 | Login para administrador com autorização para operações CRUD de pontos de coleta. | MÉDIA | 
-| RF-007 | A plataforma poderá ser reutilizada em outras cidades. | MÉDIA | 
+| RF-001 | O sistema deve oferecer funcionalidade de login e cadastro de usuários. | ALTA | 
+| RF-002 | O sistema deve estabelecer distintos níveis de acesso, categorizando funcionalidades e conteúdos segundo o seguinte critério: visitante, usuário padrão e usuário administrador (os usuários devem realizar login para poder visualizar funcionalidades exclusivas).  | ALTA |
+| RF-003 | O usuário padrão terá um perfil de usuário, por meio do qual poderá interagir com as receitas da plataforma. | ALTA | 
+| RF-004 | O sistema deve permitir que o usuário realize todas as operações de CRUD (Create/Retrieve/Update/Delete) na plataforma. Somente o usuário administrador poderá deletar e atualizar receitas que não sejam de sua autoria | ALTA | 
+| RF-005 | O sistema deve permitir que o usuário adicione comentários e imagens às receitas da plataforma.  | ALTA |  
 
 
 
@@ -58,12 +56,10 @@ Os requisitos não-funcionais descrevem características de caráter mais técni
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Obtenção e atualização dos dados de pontos de coleta seletiva em Belo Horizonte e Região Metropolitana. | ALTA | 
-|RNF-002| Plataforma online gratuita para hospedagem da página (Heroku). | ALTA | 
-|RNF-003| Banco de dados gratuito para armazenamento da informação (MySql). | ALTA | 
-|RNF-004| Implementação de Back-end com linguagem a ser definida. | ALTA | 
-|RNF-005| Integração com a API do Google Maps para visualização, em forma de mapa, dos pontos de coleta.| ALTA | 
-|RNF-006| Definição de um modelo de criação e inserção de dados que facilite a reutilização e constante atualização da plataforma. | MÉDIA | 
+|RNF-001| Plataforma online gratuita para hospedagem da página (Heroku). | ALTA | 
+|RNF-002| Banco de dados gratuito para armazenamento da informação (MySql). | ALTA | 
+|RNF-003| Implementação de Back-end com linguagem a ser definida. | ALTA | 
+|RNF-004| Definição de modelo de dados que permita a implementação de futuras funcionalidades de forma simples. | MÉDIA | 
 
 
 ## Restrições
