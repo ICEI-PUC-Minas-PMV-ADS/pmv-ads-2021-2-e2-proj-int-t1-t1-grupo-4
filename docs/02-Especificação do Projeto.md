@@ -7,6 +7,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 As personas, ou clientes típicos levantados no decorrer do procedimento de elucidação do problema, são descritas nas figuras que se seguem:
 
 ![Persona 01](https://images2.imgbox.com/d7/c7/SAOLdBJ1_o.jpg)
+![Persna teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/blob/main/docs/img/Bruna.png)
 ![Persona 02](https://images2.imgbox.com/db/50/kMYytH6R_o.jpg)
 ![Persona 03](https://images2.imgbox.com/20/90/UUTUI38O_o.jpg)
 ![Persona 04](https://images2.imgbox.com/b2/fd/NbcoRhOw_o.jpg)
