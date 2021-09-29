@@ -6,7 +6,7 @@
 
 `EIXO 2`
 
-Plataforma que possibilita ao usuário buscar receitas a partir de ingredientes que já possui em casa, colaborando na organização na rotina e reduzindo o desperdício alimentar.
+Plataforma que possibilita a busca de receitas rápidas com ingredientes simples ou pratos prontos disponíveis na geladeira, colaborando na organização na rotina e reduzindo o desperdício alimentar.
 
 ## Integrantes
 
