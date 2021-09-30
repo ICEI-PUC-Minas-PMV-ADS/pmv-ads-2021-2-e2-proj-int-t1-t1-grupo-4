@@ -79,23 +79,20 @@ Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justific
 
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 Relação de Ambientes de Trabalho
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito estão descritas abaixo. 
 
-Ambiente
-Plataforma
-Link de Acesso
-Repositório de código fonte
-GitHub
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/issues
-Gerenciamento do Projeto
-GitHub
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/projects/1
-Documentos do projeto
-Google Drive
-https://docs.google.com/document/d/1Q3H4XVlvXqvp_q7qxJFD-BZf9Fjht5Ix
-Projeto de Interface e  Wireframes
-MarvelApp
-https://marvelapp.com/project/5853057
+>Repositório de código fonte
+>GitHub
+>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/issues
+>Gerenciamento do Projeto
+>GitHub
+>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/projects/1
+>Documentos do projeto
+>Google Drive
+>https://docs.google.com/document/d/1Q3H4XVlvXqvp_q7qxJFD-BZf9Fjht5Ix
+>Projeto de Interface e  Wireframes
+>MarvelApp
+>https://marvelapp.com/project/5853057
 
 
 Gestão do Código Fonte
