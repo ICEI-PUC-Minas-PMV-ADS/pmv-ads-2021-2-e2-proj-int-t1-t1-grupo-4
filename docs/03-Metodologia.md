@@ -75,3 +75,49 @@ Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justific
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
 > - [Slack](https://slack.com/)
 > - [Github](https://github.com/)
+
+
+A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
+Relação de Ambientes de Trabalho
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
+
+Ambiente
+Plataforma
+Link de Acesso
+Repositório de código fonte
+GitHub
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/issues
+Gerenciamento do Projeto
+GitHub
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/projects/1
+Documentos do projeto
+Google Drive
+https://docs.google.com/document/d/1Q3H4XVlvXqvp_q7qxJFD-BZf9Fjht5Ix
+Projeto de Interface e  Wireframes
+MarvelApp
+https://marvelapp.com/project/5853057
+
+
+Gestão do Código Fonte
+
+Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature. Uma explicação rápida sobre este processo é apresentada no vídeo "The gitflow workflow - in less than 5 mins".
+
+Gerenciamento do Projeto
+
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+
+A equipe está organizada da seguinte maneira:
+Scrum Master: Ian
+Product Owner: Victoria
+
+Equipe de Desenvolvimento
+Mariana Mercier
+Suellen Dias
+Larysse Gurgel
+
+Equipe de Design
+Ian 
+
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando os quadros de projeto do GitHub. Os cartões do quadro de projeto contêm metadados relevantes para problemas e pull requests, como etiquetas, responsáveis, o status e quem os abriu.
+
+
