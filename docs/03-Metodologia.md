@@ -76,6 +76,7 @@ Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justific
 > - [Slack](https://slack.com/)
 > - [Github](https://github.com/)
 
+### Definições de ferramental
 
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 Relação de Ambientes de Trabalho
@@ -105,14 +106,15 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 A equipe está organizada da seguinte maneira:
 >Scrum Master: Ian
+
 >Product Owner: Victoria
 
->Equipe de Desenvolvimento
->Mariana Mercier
->Suellen Dias
+>Equipe de Desenvolvimento:
+>Mariana Mercier,
+>Suellen Dias,
 >Larysse Gurgel
 
->Equipe de Design
+>Equipe de Design:
 >Ian 
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando os quadros de projeto do GitHub. Os cartões do quadro de projeto contêm metadados relevantes para problemas e pull requests, como etiquetas, responsáveis, o status e quem os abriu.
