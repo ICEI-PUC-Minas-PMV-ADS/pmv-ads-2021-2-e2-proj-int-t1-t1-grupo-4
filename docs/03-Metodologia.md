@@ -82,17 +82,16 @@ A metodologia contempla as definições de ferramental utilizado pela equipe tan
 Relação de Ambientes de Trabalho
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito estão descritas abaixo. 
 
->Repositório de código fonte
+>Repositório de código fonte - 
 >GitHub
 >https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/issues
->Gerenciamento do Projeto
+>Gerenciamento do Projeto - 
 >GitHub
 >https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/projects/1
->Documentos do projeto
+>Documentos do projeto -
 >Google Drive
 >https://docs.google.com/document/d/1Q3H4XVlvXqvp_q7qxJFD-BZf9Fjht5Ix
->Projeto de Interface e  Wireframes
->MarvelApp
+>Projeto de Interface e  Wireframes - MarvelApp
 >https://marvelapp.com/project/5853057
 
 
