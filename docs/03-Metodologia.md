@@ -95,25 +95,25 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 >https://marvelapp.com/project/5853057
 
 
-Gestão do Código Fonte
+### Gestão do Código Fonte
 
 Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature. Uma explicação rápida sobre este processo é apresentada no vídeo "The gitflow workflow - in less than 5 mins".
 
-Gerenciamento do Projeto
+### Gerenciamento do Projeto
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 
 A equipe está organizada da seguinte maneira:
-Scrum Master: Ian
-Product Owner: Victoria
+>Scrum Master: Ian
+>Product Owner: Victoria
 
-Equipe de Desenvolvimento
-Mariana Mercier
-Suellen Dias
-Larysse Gurgel
+>Equipe de Desenvolvimento
+>Mariana Mercier
+>Suellen Dias
+>Larysse Gurgel
 
-Equipe de Design
-Ian 
+>Equipe de Design
+>Ian 
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando os quadros de projeto do GitHub. Os cartões do quadro de projeto contêm metadados relevantes para problemas e pull requests, como etiquetas, responsáveis, o status e quem os abriu.
 
