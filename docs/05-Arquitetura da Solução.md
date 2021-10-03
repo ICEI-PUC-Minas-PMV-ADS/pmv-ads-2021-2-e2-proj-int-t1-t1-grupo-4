@@ -26,28 +26,34 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 
 ## Tecnologias Utilizadas
 
-> - **Ferramentas e IDE's**
+  - _**Ferramentas e IDE's**_
+  
   - Marvelapp
   - Astah
   - LucidChart
   - Draw.Io
   - Visual Studio
-> - **Frameworks**
+  
+  - _**Frameworks**_
+ 
   - ASP.NET
-> - **Linguagens**
+  
+  - _**Linguagens**_
+
   - JavaScript
   - C#
-> - **Serviços de Hospedagem**
+
+  - _**Serviços de Hospedagem**_
   - Heroku (página)
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
+ 
+- TBD
+ 
 
-> **Links Úteis**:
->
 > - [Website com GitHub Pages](https://pages.github.com/)
 > - [Programação colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
