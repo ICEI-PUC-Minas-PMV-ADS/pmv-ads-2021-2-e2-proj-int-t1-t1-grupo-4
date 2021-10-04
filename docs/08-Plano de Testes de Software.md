@@ -1,19 +1,36 @@
-# Plano de Testes de Software
+# 7. Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+## 7.1 Objetivo do plano de testes
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+Este plano de testes tem como objetivo resumir todas as informações necessárias para planejar, executar e reportar o esforço de testes referente a aplicação.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+Existem diversos tipos de testes que podem ser aplicados para identificação de falhas. Para esta solução, além dos testes funcionais, iremos realizar o teste de stress – aqui leva-se o software ao seu limite de potência e funcionamento, para mais ou para menos, de modo a avaliar em qual ponto ele deixa de funcionar adequadamente. Isso é feito para verificar se suas especificações máximas ou mínimas de uso estão corretas.
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+Os requisitos para realização dos testes de software serão:
+Site publicado na Internet
+Navegador da Internet - Chrome, Firefox e Safari.
+Conectividade de Internet para acesso às plataformas (APISs)
+
+
+## 7.2 Recursos e elementos a serem utilizados
+
+A tabela a seguir apresenta os recursos do sistema necessário para o esforço de teste descrito neste plano:
+
+![image](https://user-images.githubusercontent.com/82478643/135785692-abd8e093-29db-4d67-b440-173700ec8dfd.png)
+
+Elemento do Software para o ambiente de teste:
+
+![image](https://user-images.githubusercontent.com/82478643/135785835-8294d9bd-2185-413c-b566-c3a3937b640a.png)
+
+## 7.3 Detalhamento da abordagem de teste: 
+
+![image](https://user-images.githubusercontent.com/82478643/135786119-6d95d1d2-69ce-4cae-af57-74bab8cea8da.png)
+
+![image](https://user-images.githubusercontent.com/82478643/135786326-fab0197e-cd12-4773-a4d3-7ad8662565ac.png)
+![image](https://user-images.githubusercontent.com/82478643/135786345-fd95b802-6316-459f-86f1-598863e07146.png)
+
+![image](https://user-images.githubusercontent.com/82478643/135786364-78d88a65-56b7-4a75-83a3-7a5b54787ffa.png)
+
+![image](https://user-images.githubusercontent.com/82478643/135786377-6e3f0a0c-ccd4-4cf7-9575-11181dc57471.png)
+
+![image](https://user-images.githubusercontent.com/82478643/135786402-e0f19d49-adc7-4740-9082-c2255773b79f.png)
