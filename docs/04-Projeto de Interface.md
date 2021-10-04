@@ -9,7 +9,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-![image](https://user-images.githubusercontent.com/82478867/135775548-c2fc7e3d-060a-417f-9244-990d9845f997.png)
+![image](https://user-images.githubusercontent.com/82478867/135778211-9f25e4ac-5f0b-49a2-80f1-a675c866f379.png)
 
 - [Link no LucidChart](https://lucid.app/lucidchart/invitations/accept/inv_5fcba798-f090-4ca2-96d4-2f49c0008572?viewport_loc=20%2C261%2C2048%2C1020%2C0_0)
 
