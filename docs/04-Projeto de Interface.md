@@ -16,15 +16,13 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+![Mock up] https://marvelapp.com/prototype/77248f6/screen/82067599
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+Considerando a elaboração de um modelo embasado nas boas práticas de UX, o grupo decidiu-se por adotar a prototipagem por meio de um Mock Up, elaborado com o Marvell App, no qual foram avaliadas a tipagem da fonte, estudo de colorimetria, layout e um user flow em consonância com as referidas práticas.
+
+Por se tratar de uma aplicação na qual ultiliza-se receitas culinárias utilizamos a cor preta para atribuir elegância, a cor branca para dar um alto contraste e a cor laranja para atribuir sociabilidade, já que a comida é a mais antiga  forma de socialização e integração entre os seres humanos. 
+
+Além disso, foi utilizada uma fonte não serifada no intuito de atribuir mais velocidade à aplicação ao ser carregada em páginas web, bem como para dar um ar de leveza moderna. O layout segue o modelo de escrita ocidental, sendo lido da esquerda para direita, com os itend de menu em ordem alfabética, afim de facilitar a busca dos usuários das receitas categorizadas e cadastradas na aplicação. 
+
+Todos os elementos supramencionados, contidos no protótipo, foram pensados e projetados de acordo com os dados extraídos das personas, juntamente com os digramas de uso e de fluxo idealizados para proporcionar uma melhor experiência. 
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
