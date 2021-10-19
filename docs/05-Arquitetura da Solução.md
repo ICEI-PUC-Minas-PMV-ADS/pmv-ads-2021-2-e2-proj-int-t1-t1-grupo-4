@@ -6,19 +6,19 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![image](https://user-images.githubusercontent.com/82478867/135183942-5f6ad92b-9d2f-41fb-a452-d60c721f7c1e.png)
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/main/docs/img/diagramaclasses.png)
 
 ## Modelo ER
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-![image](https://images2.imgbox.com/ca/ba/TqwRZC7j_o.png)
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/main/docs/img/entidaderelacionamento.png)
 
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
 
-![image](https://images2.imgbox.com/d9/f0/FnYb5E2O_o.png) 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t1-t1-grupo-4/blob/main/docs/img/modelorelacional.png?raw=true) 
 
 ## Tecnologias Utilizadas
 
