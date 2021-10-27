@@ -28,6 +28,6 @@ namespace app_web_backend.Models
         public DbSet<Receita> Receitas { get; set; }
         public DbSet<Ingrediente> Ingredientes { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
-        public DbSet<Usuario_Receita> Usuarios_Receitas { get; set; }
+        public DbSet<Usuario_Receita> Usuarios_Receitas { get; set; }       
     }
 }
