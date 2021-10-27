@@ -59,10 +59,15 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    color: aliceblue;
+    margin-bottom: 60px;
+    background-image: url("../img/background-image.jpg");
 }
+
+
 .footer {
+  background-color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
