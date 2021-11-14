@@ -29,7 +29,7 @@ namespace app_web_backend.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login([Bind("Email,Senha")] Usuario usuario)
+        public async Task<IActionResult> Login([Bind("Id,Senha")] Usuario usuario)
         {
             var user = await _context.Usuarios
                 .FirstOrDefaultAsync(m => m.Email == usuario.Email);
@@ -125,7 +125,7 @@ namespace app_web_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,Avatar,Perfil")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
