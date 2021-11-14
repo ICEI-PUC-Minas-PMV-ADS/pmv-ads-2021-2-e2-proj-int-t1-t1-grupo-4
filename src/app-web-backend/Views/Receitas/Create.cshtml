@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="TempoPreparo" class="control-label"></label>
-                <input asp-for="TempoPreparo" class="form-control" />
+                <input asp-for="TempoPreparo" class="form-control" type="number" min="5" />
                 <span asp-validation-for="TempoPreparo" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -34,19 +34,15 @@
             </div>
             <div class="form-group">
                 <label asp-for="Autor" class="control-label"></label>
-                <input asp-for="Autor" class="form-control" />
-                <span asp-validation-for="Autor" class="text-danger"></span>
+                <input asp-for="Autor" class ="form-control" enabled="false" asp-items= "@User.Identity.Name"/>
             </div>
+<!--  TODO     
             <div class="form-group">
                 <label asp-for="Imagem" class="control-label"></label>
                 <input asp-for="Imagem" class="form-control" />
                 <span asp-validation-for="Imagem" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ContadorFavoritos" class="control-label"></label>
-                <input asp-for="ContadorFavoritos" class="form-control" />
-                <span asp-validation-for="ContadorFavoritos" class="text-danger"></span>
-            </div>
+ -->
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
