@@ -19,8 +19,15 @@ namespace app_web_backend.Controllers
         }
 
         // GET: Receitas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string stringDeBusca)
         {
+            var receitas = from r in _context.Receitas
+                           select r;
+
+            if(!String.IsNullOrEmpty(stringDeBusca))
+            {
+                receitas = receitas.Where(s => s.Nome.Contains(stringDeBusca));
+            }
             return View(await _context.Receitas.ToListAsync());
         }
 
@@ -41,6 +48,7 @@ namespace app_web_backend.Controllers
 
             return View(receita);
         }
+
 
         // GET: Receitas/Create
         public IActionResult Create()

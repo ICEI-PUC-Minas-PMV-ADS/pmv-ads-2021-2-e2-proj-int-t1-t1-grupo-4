@@ -4,7 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Busca de Receitas</h1>
+
+<form asp-controller="Receitas" asp-action="Index">
+    <p>
+        Ingrediente: <input type="text" name="stringDeBusca" />
+        <input type="submit" value="Filtro" />
+    </p>
+</form>
 
 <p>
     <a asp-action="Create">Create New</a>
