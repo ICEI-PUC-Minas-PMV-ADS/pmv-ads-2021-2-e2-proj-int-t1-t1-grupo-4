@@ -62,12 +62,7 @@ body {
     /* Margin bottom by footer height */
     color: aliceblue;
     margin-bottom: 60px;
-    background-image: url("../img/background-image.jpg");
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    filter: blur(8px);
+    /*background-image: url("../img/background-image.jpg"); */
 }
 
 
