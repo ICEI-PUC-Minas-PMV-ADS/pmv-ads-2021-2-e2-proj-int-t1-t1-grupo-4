@@ -26,9 +26,9 @@ namespace app_web_backend.Controllers
 
             if(!String.IsNullOrEmpty(stringDeBusca))
             {
-                receitas = receitas.Where(s => s.Nome.Contains(stringDeBusca));
+                receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
             }
-            return View(await _context.Receitas.ToListAsync());
+            return View(await receitas.ToListAsync());
         }
 
         // GET: Receitas/Details/5
