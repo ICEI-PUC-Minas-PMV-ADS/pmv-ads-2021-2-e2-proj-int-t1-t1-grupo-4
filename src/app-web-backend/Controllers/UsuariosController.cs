@@ -125,7 +125,7 @@ namespace app_web_backend.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,Avatar,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,ConfirmaSenha,Avatar,EstaLogado")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {

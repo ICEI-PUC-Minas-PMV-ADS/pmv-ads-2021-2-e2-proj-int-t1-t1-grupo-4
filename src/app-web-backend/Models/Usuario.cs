@@ -26,8 +26,9 @@ namespace app_web_backend.Models
 
         [NotMapped]
         [Display(Name ="Confirme sua senha")]
-        [Required(ErrorMessage = "Confirme sua senha!")]
-        [Compare("Senha", ErrorMessage = "A senha deve ser igual nos dois campos.")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "É necessário confirmar sua senha.")]
+        [Compare("Senha", ErrorMessage ="As senhas devem ser iguais nos dois campos.")]
         public string ConfirmaSenha { get; set; }
         
 

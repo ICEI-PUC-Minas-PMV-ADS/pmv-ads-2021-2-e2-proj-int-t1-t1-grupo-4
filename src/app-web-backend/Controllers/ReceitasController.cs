@@ -53,7 +53,7 @@ namespace app_web_backend.Controllers
         // GET: Receitas/Create
         public IActionResult Create()
         {
-            ViewData["UsuariosId"] = new SelectList(_context.Usuarios, "Id", "Nome");
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Nome");
             return View();
         }
 
@@ -70,7 +70,7 @@ namespace app_web_backend.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Usuario_Receita"] = new SelectList(_context.Usuarios_Receitas, "Id", "Nome", receita.Usuario_Receitas);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Nome", receita.Autor);
             return View(receita);
         }
 
