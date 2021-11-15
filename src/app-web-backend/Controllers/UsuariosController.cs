@@ -29,7 +29,7 @@ namespace app_web_backend.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login([Bind("Id,Senha")] Usuario usuario)
+        public async Task<IActionResult> Login([Bind("Email,Senha")] Usuario usuario)
         {
             var user = await _context.Usuarios
                 .FirstOrDefaultAsync(m => m.Email == usuario.Email);
