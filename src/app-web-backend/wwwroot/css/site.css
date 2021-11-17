@@ -60,7 +60,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    color: aliceblue;
+    
     margin-bottom: 60px;
     /* background-image: url("../img/background-image.jpg"); */
     background-position: bottom;
@@ -68,7 +68,7 @@ body {
     background-size: cover;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    
 }
 
 
