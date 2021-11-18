@@ -27,16 +27,17 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastre-se</a>
                             </li>
                         }
+
                         @if (User.Identity.IsAuthenticated)
-                         {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Receitas" asp-action="Create">Compartilhe sua receita</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Receitas" asp-action="MinhasReceitas">Minhas Receitas</a>
-                                </li>
-                         }
-                        </ul>
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Receitas" asp-action="Create">Compartilhe sua receita</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Receitas" asp-action="MinhasReceitas">Minhas Receitas</a>
+                            </li>
+                        }
+                    </ul>
                     <ul class="navbar-nav">
                         @if (User.Identity.IsAuthenticated)
                         {

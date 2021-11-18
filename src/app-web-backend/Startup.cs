@@ -48,15 +48,6 @@ namespace app_web_backend
                     options.LoginPath = "/Users/Login/";
                 });
 
-            services.AddControllers(config =>
-            {
-                // using Microsoft.AspNetCore.Mvc.Authorization;
-                // using Microsoft.AspNetCore.Authorization;
-                var policy = new AuthorizationPolicyBuilder()
-                                 .RequireAuthenticatedUser()
-                                 .Build();
-                config.Filters.Add(new AuthorizeFilter(policy));
-            });
             services.AddControllersWithViews();
 
 
