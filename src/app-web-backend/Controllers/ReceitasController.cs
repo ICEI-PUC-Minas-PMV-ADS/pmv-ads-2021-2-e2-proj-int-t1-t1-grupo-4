@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace app_web_backend.Controllers
 {
@@ -24,9 +25,21 @@ namespace app_web_backend.Controllers
             var receitas = from r in _context.Receitas
                            select r;
 
-            if(!String.IsNullOrEmpty(stringDeBusca))
+            if (!String.IsNullOrEmpty(stringDeBusca))
             {
                 receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
+            }
+            return View(await receitas.ToListAsync());
+        }
+
+        // GET: Receitas de Usuário Logado
+        public async Task<IActionResult> MinhasReceitas()
+        {
+            var receitas = from r in _context.Receitas
+                           select r;
+            {
+                //TODO implementar filtro corretamente
+                receitas = receitas.Where(s => !String.IsNullOrEmpty(s.Autor.ToString()));
             }
             return View(await receitas.ToListAsync());
         }
