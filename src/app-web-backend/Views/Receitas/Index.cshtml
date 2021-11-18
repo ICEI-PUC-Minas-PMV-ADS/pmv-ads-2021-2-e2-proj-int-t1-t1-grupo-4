@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<app_web_backend.Models.Receita>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Todas as Receitas";
 }
 
-<h1>Busca de Receitas</h1>
+<h1>Todas as Receitas</h1>
 
 <form asp-controller="Receitas" asp-action="Index" method="get">
     <p>
@@ -13,9 +13,7 @@
     </p>
 </form>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -33,9 +31,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Autor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Imagem)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ContadorFavoritos)
@@ -62,15 +57,12 @@
                 @Html.DisplayFor(modelItem => item.Autor)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Imagem)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.ContadorFavoritos)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Codigo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Codigo">Delete</a>
+
+                <a asp-action="Details" asp-route-id="@item.Codigo">Details</a>
+
             </td>
         </tr>
 }

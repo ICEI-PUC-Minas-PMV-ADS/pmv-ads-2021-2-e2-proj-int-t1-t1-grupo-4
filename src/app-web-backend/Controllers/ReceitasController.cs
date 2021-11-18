@@ -35,13 +35,13 @@ namespace app_web_backend.Controllers
         // GET: Receitas de Usuário Logado
         public async Task<IActionResult> MinhasReceitas()
         {
-            var receitas = from r in _context.Receitas
+            var minhasReceitas = from r in _context.Receitas
                            select r;
             {
-                //TODO implementar filtro corretamente
-                receitas = receitas.Where(s => !String.IsNullOrEmpty(s.Autor.ToString()));
+                //TODO implementar filtro corretamente WHY THIS DOESN"T WORK?? (s => int.Equals(s.Autor, User.FindFirstValue(ClaimTypes.NameIdentifier)));
+                minhasReceitas = minhasReceitas.Where(s => s.Autor == 0);
             }
-            return View(await receitas.ToListAsync());
+            return View(await minhasReceitas.ToListAsync());
         }
 
         // GET: Receitas/Details/5
