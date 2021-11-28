@@ -27,9 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.ModoPreparo)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ContadorFavoritos)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -48,9 +46,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.ModoPreparo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ContadorFavoritos)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> |
