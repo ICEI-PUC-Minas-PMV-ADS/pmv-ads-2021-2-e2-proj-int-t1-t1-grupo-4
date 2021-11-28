@@ -10,7 +10,7 @@ using app_web_backend.Models;
 namespace app_web_backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211026232424_Usuarios01")]
+    [Migration("20211114113347_Usuarios01")]
     partial class Usuarios01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

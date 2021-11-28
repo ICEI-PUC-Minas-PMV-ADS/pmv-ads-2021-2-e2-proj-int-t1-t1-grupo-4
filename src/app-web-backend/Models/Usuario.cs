@@ -24,8 +24,17 @@ namespace app_web_backend.Models
         [DataType(DataType.Password)]
         public string Senha { get; set; }
 
+        [NotMapped]
+        [Display(Name ="Confirme sua senha")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "É necessário confirmar sua senha.")]
+        [Compare("Senha", ErrorMessage ="As senhas devem ser iguais nos dois campos.")]
+        public string ConfirmaSenha { get; set; }
+        
+
         public string Avatar { get; set; }
         public bool EstaLogado { get; set; }
+        
         public Perfil Perfil { get; set; }
         public List<Usuario_Receita> Usuario_Receitas { get; set; }
     }

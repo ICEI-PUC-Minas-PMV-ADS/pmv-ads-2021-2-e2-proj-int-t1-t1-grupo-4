@@ -14,6 +14,7 @@ namespace app_web_backend
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +23,7 @@ namespace app_web_backend
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+
     }
 }

@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace app_web_backend.Controllers
 {
@@ -19,9 +21,28 @@ namespace app_web_backend.Controllers
         }
 
         // GET: Receitas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string stringDeBusca)
         {
-            return View(await _context.Receitas.ToListAsync());
+            var receitas = from r in _context.Receitas
+                           select r;
+
+            if (!String.IsNullOrEmpty(stringDeBusca))
+            {
+                receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
+            }
+            return View(await receitas.ToListAsync());
+        }
+
+        // GET: Receitas de Usuário Logado
+        public async Task<IActionResult> MinhasReceitas()
+        {
+            var minhasReceitas = from r in _context.Receitas
+                           select r;
+            {
+                //TODO implementar filtro corretamente WHY THIS DOESN"T WORK?? (s => int.Equals(s.Autor, User.FindFirstValue(ClaimTypes.NameIdentifier)));
+                minhasReceitas = minhasReceitas.Where(s => s.Autor == 3);
+            }
+            return View(await minhasReceitas.ToListAsync());
         }
 
         // GET: Receitas/Details/5
@@ -42,9 +63,11 @@ namespace app_web_backend.Controllers
             return View(receita);
         }
 
+
         // GET: Receitas/Create
         public IActionResult Create()
         {
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Nome");
             return View();
         }
 
@@ -61,6 +84,7 @@ namespace app_web_backend.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Nome", receita.Autor);
             return View(receita);
         }
 
