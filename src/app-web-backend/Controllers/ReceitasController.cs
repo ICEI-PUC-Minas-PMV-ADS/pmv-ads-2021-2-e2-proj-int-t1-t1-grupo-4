@@ -40,7 +40,7 @@ namespace app_web_backend.Controllers
                            select r;
             {
                 //TODO implementar filtro corretamente WHY THIS DOESN"T WORK?? (s => int.Equals(s.Autor, User.FindFirstValue(ClaimTypes.NameIdentifier)));
-                minhasReceitas = minhasReceitas.Where(s => s.Autor == 0);
+                minhasReceitas = minhasReceitas.Where(s => s.Autor == 3);
             }
             return View(await minhasReceitas.ToListAsync());
         }
