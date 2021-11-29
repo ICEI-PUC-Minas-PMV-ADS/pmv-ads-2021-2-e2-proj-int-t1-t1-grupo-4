@@ -9,4 +9,4 @@
 | **Registro**              | O filtro está funcionando. |
 
 
-Os deais testes não foram realizados pois condizem a funcionalidades que estão sendo implementadas.
+Os demais testes não foram realizados pois condizem a funcionalidades que estão sendo implementadas.
