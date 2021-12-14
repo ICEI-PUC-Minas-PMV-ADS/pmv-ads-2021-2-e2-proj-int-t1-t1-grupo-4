@@ -7,9 +7,10 @@
 <h1>Todas as Receitas</h1>
 
 <form asp-controller="Receitas" asp-action="Index" method="get">
+    <br />
     <p>
-        Ingrediente: <input type="text" name="stringDeBusca" />
-        <input type="submit" value="Filtro" />
+        Ingrediente: <input type="text" name="stringDeBusca" style="width:20%"/>
+        <input type="submit" value="Buscar" class="btn btn-primary" />
     </p>
 </form>
 
@@ -32,9 +33,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.Autor)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ContadorFavoritos)
-            </th>
+            <!--
+    <th>
+        @Html.DisplayNameFor(model => model.ContadorFavoritos)
+    </th>
+        -->
             <th></th>
         </tr>
     </thead>
@@ -56,12 +59,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Autor)
             </td>
-            <td>
+            <!--
+                <td>
                 @Html.DisplayFor(modelItem => item.ContadorFavoritos)
-            </td>
+                </td>
+            -->
             <td>
 
-                <a asp-action="Details" asp-route-id="@item.Codigo">Details</a>
+                <a asp-action="Details" asp-route-id="@item.Codigo">Detalhar</a>
 
             </td>
         </tr>

@@ -6,9 +6,10 @@
 
 
 <form asp-controller="Receitas" asp-action="MinhasReceitas" method="get">
+    <br />
     <p>
-        Ingrediente: <input type="text" name="stringDeBusca" />
-        <input type="submit" value="Filtro" />
+        Ingrediente: <input type="text" name="stringDeBusca" style="width:20%" />
+        <input type="submit" value="Buscar" class="btn btn-primary" />
     </p>
 </form>
 
@@ -34,25 +35,25 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IngredientePrincipal)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TempoPreparo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ModoPreparo)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Codigo">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Codigo">Delete</a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IngredientePrincipal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TempoPreparo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModoPreparo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Codigo">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Codigo">Detalhar</a> |
+                <a asp-action="Delete" asp-route-id="@item.Codigo">Excluir</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>

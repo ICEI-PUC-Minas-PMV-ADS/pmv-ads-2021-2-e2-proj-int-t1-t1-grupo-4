@@ -4,58 +4,70 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Publique sua receita!</h1>
+<h1>Compartilhe sua receita!</h1>
 
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-10">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label">Nome do Prato</label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IngredientePrincipal" class="control-label">Ingrediente Principal</label>
-                <input asp-for="IngredientePrincipal" class="form-control" />
-                <span asp-validation-for="IngredientePrincipal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TempoPreparo" class="control-label">Tempo de Preparo</label>
-                <input asp-for="TempoPreparo" class="form-control" type="number" min="15" step="15" />
-                <span asp-validation-for="TempoPreparo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ModoPreparo" class="control-label">Modo de Preparo</label>
-                <input asp-for="ModoPreparo" class="form-control" />
-                <span asp-validation-for="ModoPreparo" class="text-danger"></span>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label">Nome da receita</label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="IngredientePrincipal" class="control-label">Ingredientes</label>
+                    <textarea asp-for="IngredientePrincipal" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="IngredientePrincipal" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ModoPreparo" class="control-label">Modo de Preparo</label>
+                    <textarea asp-for="ModoPreparo" class="form-control" rows="7"></textarea>
+                    <span asp-validation-for="ModoPreparo" class="text-danger"></span>
+                </div>
+
             </div>
 
+            <div class="col-md-3">
 
-            <div class="form-group">
-                <label asp-for="Autor" class="control-label"></label>
-                <select asp-for="Autor" class="form-control" asp-items="ViewBag.UsuarioId"></select>
+                <div class="form-group">
+                    <label asp-for="TempoPreparo" class="control-label">Tempo de Preparo</label>
+                    <input asp-for="TempoPreparo" class="form-control" type="number" min="15" step="15" />
+                    <span asp-validation-for="TempoPreparo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label asp-for="Autor" class="control-label"></label>
+                    <select asp-for="Autor" class="form-control" asp-items="ViewBag.UsuarioId"></select>
+                </div>
             </div>
             <!--  TODO
 
-                 <div class="form-group">
-                     <label asp-for="Imagem" class="control-label"></label>
-                     <input asp-for="Imagem" class="form-control" />
-                     <span asp-validation-for="Imagem" class="text-danger"></span>
-                 </div>
-      -->
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                       <div class="form-group">
+                           <label asp-for="Imagem" class="control-label"></label>
+                           <input asp-for="Imagem" class="form-control" />
+                           <span asp-validation-for="Imagem" class="text-danger"></span>
+                       </div>
+            -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="submit" value="Compartilhar" class="btn btn-success" />
+                </div>
+
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<!--<div>
+<a asp-action="Index">Back to List</a>
+</div>-->
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
