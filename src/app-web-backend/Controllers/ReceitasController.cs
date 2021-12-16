@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend.Models;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Identity;
 
 namespace app_web_backend.Controllers
 {
@@ -30,6 +27,17 @@ namespace app_web_backend.Controllers
             {
                 receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
             }
+
+            // formatar exibicao do modo preparo com tres pontinhos
+            await receitas.ForEachAsync(receita => { 
+                if (receita.ModoPreparo.Length > 50)
+                {
+                    var TRES_PONTOS = "...";
+                    receita.ModoPreparo = receita.ModoPreparo.Substring(0, 50) + " " +  TRES_PONTOS;
+                }
+            });
+
+
             return View(await receitas.ToListAsync());
         }
 
