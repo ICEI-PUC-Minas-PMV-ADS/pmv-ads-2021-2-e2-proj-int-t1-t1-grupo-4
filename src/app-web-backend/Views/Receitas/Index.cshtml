@@ -33,11 +33,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Autor)
             </th>
-            <!--
-    <th>
-        @Html.DisplayNameFor(model => model.ContadorFavoritos)
-    </th>
-        -->
+
             <th></th>
         </tr>
     </thead>
@@ -59,11 +55,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Autor)
             </td>
-            <!--
-                <td>
-                @Html.DisplayFor(modelItem => item.ContadorFavoritos)
-                </td>
-            -->
+
             <td>
 
                 <a asp-action="Details" asp-route-id="@item.Codigo">Detalhar</a>
