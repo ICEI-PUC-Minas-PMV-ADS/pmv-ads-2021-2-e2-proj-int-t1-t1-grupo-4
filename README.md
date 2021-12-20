@@ -8,6 +8,8 @@
 
 Plataforma que possibilita a busca de receitas rápidas com ingredientes simples ou pratos prontos disponíveis na geladeira, colaborando na organização na rotina e reduzindo o desperdício alimentar.
 
+Visite a solução completa hospedada em nuvem: https://app-web-backend20211128164538.azurewebsites.net/
+
 ## Integrantes
 
 * Ian Amaral Barbosa Moreira
