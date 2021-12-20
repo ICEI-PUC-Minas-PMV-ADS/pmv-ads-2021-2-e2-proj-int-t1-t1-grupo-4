@@ -44,13 +44,34 @@ namespace app_web_backend.Controllers
         // GET: Receitas de Usuário Logado
         public async Task<IActionResult> MinhasReceitas()
         {
-            var minhasReceitas = from r in _context.Receitas
+            var receitas = from r in _context.Receitas
                            select r;
+            var userId = from u in _context.Usuarios where u.Nome == User.Identity.Name
+                         select u.Id;
+
+            if (userId != null)
             {
-                //TODO implementar filtro corretamente WHY THIS DOESN"T WORK?? (s => int.Equals(s.Autor, User.FindFirstValue(ClaimTypes.NameIdentifier)));
-                minhasReceitas = minhasReceitas.Where(s => s.Autor == 3);
+                var minhasReceitas = receitas.Where(x => x.Autor == userId.First());
+
+                // formatar exibicao do modo preparo com tres pontinhos
+                await minhasReceitas.ForEachAsync(receita =>
+                {
+                    if (receita.ModoPreparo.Length > 50)
+                    {
+                        var TRES_PONTOS = "...";
+                        receita.ModoPreparo = receita.ModoPreparo.Substring(0, 50) + " " + TRES_PONTOS;
+                    }
+                });
+
+                return View(await minhasReceitas.ToListAsync());
+
+            } else
+            {
+                ViewData["Message"] = "Compartilhe sua primeira receita!";
+                return View();
             }
-            return View(await minhasReceitas.ToListAsync());
+
+            
         }
 
         // GET: Receitas/Details/5
@@ -75,7 +96,7 @@ namespace app_web_backend.Controllers
         // GET: Receitas/Create
         public IActionResult Create()
         {
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Nome");
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios.Where(u => u.Nome == User.Identity.Name), "Id", "Nome");
             return View();
         }
 
@@ -85,14 +106,19 @@ namespace app_web_backend.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Codigo,Nome,IngredientePrincipal,TempoPreparo,ModoPreparo,Autor,Imagem,ContadorFavoritos")] Receita receita)
-        {
+        {                     
+            
+
             if (ModelState.IsValid)
             {
                 _context.Add(receita);
                 await _context.SaveChangesAsync();
+              //  var autor = await _context.Usuarios.FirstAsync(u => u.Nome == User.Identity.Name);
+              //  _context.Update(receita.Autor = autor.Id);
+              //  await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Nome", receita.Autor);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios.Where(u => u.Nome == User.Identity.Name), "Id", "Nome", receita.Autor);
             return View(receita);
         }
 
