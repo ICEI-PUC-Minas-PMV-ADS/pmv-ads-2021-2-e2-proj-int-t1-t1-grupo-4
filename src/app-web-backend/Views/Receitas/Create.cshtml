@@ -35,12 +35,11 @@
             <div class="col-md-3">
 
                 <div class="form-group">
-                    <label asp-for="TempoPreparo" class="control-label">Tempo de Preparo (min)</label>
+                    <label asp-for="TempoPreparo" class="control-label">Tempo de Preparo</label>
                     <input asp-for="TempoPreparo" class="form-control" type="number" min="15" step="15" />
                     <span asp-validation-for="TempoPreparo" class="text-danger"></span>
                 </div>
             </div>
-
 
             <div class="col-md-3">
                 <div class="form-group">
@@ -48,14 +47,14 @@
                     <select asp-for="Autor" class="form-control" asp-items="ViewBag.UsuarioId"></select>
                 </div>
             </div>
-            <!--
+            <!--  TODO
 
-                      <div class="form-group">
-                          <label asp-for="Imagem" class="control-label"></label>
-                          <input asp-for="Imagem" class="form-control" />
-                          <span asp-validation-for="Imagem" class="text-danger"></span>
-                      </div>
-           -->
+                       <div class="form-group">
+                           <label asp-for="Imagem" class="control-label"></label>
+                           <input asp-for="Imagem" class="form-control" />
+                           <span asp-validation-for="Imagem" class="text-danger"></span>
+                       </div>
+            -->
             <div class="col-md-3">
                 <div class="form-group">
                     <input type="submit" value="Compartilhar" class="btn btn-success" />

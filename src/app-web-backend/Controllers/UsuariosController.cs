@@ -132,9 +132,9 @@ namespace app_web_backend.Controllers
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Login));
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Login));
+            return View(usuario);
         }
 
         // GET: Usuarios/Edit/5

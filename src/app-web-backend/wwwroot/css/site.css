@@ -59,15 +59,27 @@ html {
 }
 
 body {
-    /* Margin bottom by footer height*/
+    /* Margin bottom by footer height */
+<<<<<<< HEAD
+    
+    margin-bottom: 60px;
+    /* background-image: url("../img/background-image.jpg"); */
+=======
 
     margin-bottom: 60px;
-    background-image: url("https://images.pexels.com/photos/4045568/pexels-photo-4045568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("../img/peas.jpg");
+>>>>>>> parent of 8109ebc (Fix filtro MinhasReceitas, melhora Create Receitas (pre-set autor), New BG.)
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+<<<<<<< HEAD
+    width: 100%;
+    
+=======
     width: 100vw;
+
+>>>>>>> parent of 8109ebc (Fix filtro MinhasReceitas, melhora Create Receitas (pre-set autor), New BG.)
 }
 
 
