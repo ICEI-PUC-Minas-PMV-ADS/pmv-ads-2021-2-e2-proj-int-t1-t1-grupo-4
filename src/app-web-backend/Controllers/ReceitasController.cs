@@ -43,16 +43,22 @@ namespace app_web_backend.Controllers
         }
 
         // GET: Receitas de Usuário Logado
-        public async Task<IActionResult> MinhasReceitas()
+        public async Task<IActionResult> MinhasReceitas(string stringDeBusca)
         {
             var receitas = from r in _context.Receitas
                            select r;
             var userId = from u in _context.Usuarios where u.Nome == User.Identity.Name
                          select u.Id;
 
+
             if (userId != null)
             {
                 var minhasReceitas = receitas.Where(x => x.Autor == userId.First());
+                if (!String.IsNullOrEmpty(stringDeBusca))
+                
+                {
+                    receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
+                }
 
                 // formatar exibicao do modo preparo com tres pontinhos
                 await minhasReceitas.ForEachAsync(receita =>
