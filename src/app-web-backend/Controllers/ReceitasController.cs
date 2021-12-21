@@ -57,7 +57,7 @@ namespace app_web_backend.Controllers
                 if (!String.IsNullOrEmpty(stringDeBusca))
                 
                 {
-                    receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
+                    minhasReceitas = minhasReceitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
                 }
 
                 // formatar exibicao do modo preparo com tres pontinhos
