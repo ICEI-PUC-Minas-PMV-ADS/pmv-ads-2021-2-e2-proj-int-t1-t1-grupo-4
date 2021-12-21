@@ -23,6 +23,7 @@ namespace app_web_backend.Controllers
             var receitas = from r in _context.Receitas
                            select r;
 
+
             if (!String.IsNullOrEmpty(stringDeBusca))
             {
                 receitas = receitas.Where(s => (s.IngredientePrincipal!.Contains(stringDeBusca) || s.Nome!.Contains(stringDeBusca)));
@@ -77,6 +78,12 @@ namespace app_web_backend.Controllers
         // GET: Receitas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var userId = from u in _context.Usuarios
+                         where u.Nome == User.Identity.Name
+                         select u.Id;
+
+            ViewBag.userid = userId;
+
             if (id == null)
             {
                 return NotFound();
@@ -113,24 +120,23 @@ namespace app_web_backend.Controllers
             {
                 _context.Add(receita);
                 await _context.SaveChangesAsync();
-              //  var autor = await _context.Usuarios.FirstAsync(u => u.Nome == User.Identity.Name);
-              //  _context.Update(receita.Autor = autor.Id);
-              //  await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UsuarioId"] = new SelectList(_context.Usuarios.Where(u => u.Nome == User.Identity.Name), "Id", "Nome", receita.Autor);
-            return View(receita);
+           return View(receita);
         }
 
         // GET: Receitas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+                       
+
             if (id == null)
             {
                 return NotFound();
             }
 
             var receita = await _context.Receitas.FindAsync(id);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios.Where(u => u.Nome == User.Identity.Name), "Id", "Nome");
             if (receita == null)
             {
                 return NotFound();

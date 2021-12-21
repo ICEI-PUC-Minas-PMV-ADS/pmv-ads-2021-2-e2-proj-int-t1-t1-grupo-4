@@ -44,9 +44,5 @@
     </dl>
 </div>
 <div>
-    @if (User.Identity.IsAuthenticated)
-    {
-        <a asp-action="Edit" asp-route-id="@Model.Codigo">Editar receita</a>
-    }
-    |<a asp-action="Index">Voltar</a>
+    <a asp-action="Index">Voltar</a>
 </div>
